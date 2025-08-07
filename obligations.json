@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "generated_at": "2025-08-06T23:00:00-05:00",
+    "company": {
+      "id": 42,
+      "name": "ACME Corp",
+      "tax_id": "EC-1234567890",
+      "address": {
+        "street": "Av. de la Prensa 1234",
+        "city": "Guayaquil",
+        "country": "Ecuador",
+        "postal_code": "090150"
+      }
+    },
+    "year": 2025,
+    "fiscal_period": "2025Q3"
+  },
+  "obligations": [
+    {
+      "id": 1,
+      "name": "Pago IVA",
+      "description": "Impuesto al Valor Agregado mensual",
+      "due_date": "2025-08-10",
+      "type": "Impuesto",
+      "amount": {
+        "value": 1250.75,
+        "currency": "USD"
+      },
+      "status": "Pendiente",
+      "assigned_to": {
+        "user_id": 101,
+        "name": "Juan Pérez",
+        "email": "juan.perez@acmecorp.ec"
+      },
+      "history": [
+        {
+          "event": "created",
+          "date": "2025-07-01T08:15:00-05:00",
+          "by": "system"
+        },
+        {
+          "event": "reminder_sent",
+          "date": "2025-08-01T09:00:00-05:00",
+          "method": "email"
+        }
+      ],
+      "reminders": {
+        "frequency": "weekly",
+        "next_reminder": "2025-08-08T09:00:00-05:00",
+        "attempts": 1
+      }
+    },
+    {
+      "id": 2,
+      "name": "Declaración mensual",
+      "description": "Reporte de operaciones y retenciones",
+      "due_date": "2025-08-20",
+      "type": "Reporte",
+      "period": {
+        "start": "2025-07-01",
+        "end": "2025-07-31"
+      },
+      "status": "En Proceso",
+      "assigned_to": {
+        "user_id": 102,
+        "name": "María López",
+        "email": "maria.lopez@acmecorp.ec"
+      },
+      "history": [
+        {
+          "event": "created",
+          "date": "2025-07-05T14:30:00-05:00",
+          "by": "system"
+        },
+        {
+          "event": "status_updated",
+          "date": "2025-08-05T10:00:00-05:00",
+          "from": "Pendiente",
+          "to": "En Proceso",
+          "by": "María López"
+        }
+      ],
+      "attachments": [
+        {
+          "filename": "datos_operaciones_julio.csv",
+          "uploaded_at": "2025-07-31T17:45:00-05:00"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Liquidación sueldos",
+      "description": "Cálculo y pago de nómina quincenal",
+      "due_date": "2025-08-31",
+      "type": "Nómina",
+      "amount": {
+        "value": 23000.00,
+        "currency": "USD"
+      },
+      "status": "Completado",
+      "assigned_to": {
+        "user_id": 103,
+        "name": "Carlos Gómez",
+        "email": "carlos.gomez@acmecorp.ec"
+      },
+      "history": [
+        {
+          "event": "created",
+          "date": "2025-08-01T08:00:00-05:00",
+          "by": "system"
+        },
+        {
+          "event": "processed",
+          "date": "2025-08-29T12:00:00-05:00",
+          "by": "Carlos Gómez"
+        },
+        {
+          "event": "paid",
+          "date": "2025-08-30T16:30:00-05:00",
+          "by": "Banco XYZ"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Pago Renta",
+      "description": "Impuesto a la renta anual",
+      "due_date": "2025-09-15",
+      "type": "Impuesto",
+      "amount": {
+        "value": 7800.50,
+        "currency": "USD"
+      },
+      "status": "Pendiente",
+      "assigned_to": {
+        "user_id": 104,
+        "name": "Ana Castillo",
+        "email": "ana.castillo@acmecorp.ec"
+      },
+      "history": [
+        {
+          "event": "created",
+          "date": "2025-07-01T08:15:00-05:00",
+          "by": "system"
+        }
+      ],
+      "notes": [
+        "Requiere validación manual de deducciones",
+        "Confirmar datos con el departamento financiero"
+      ]
+    }
+  ]
+}
